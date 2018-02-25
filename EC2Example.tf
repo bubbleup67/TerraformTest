@@ -41,6 +41,7 @@ resource "aws_instance" "example" {
   
   tags {
     Name = "HelloWorld"
+    Purpose = "ForFun"
   }
 }
 resource "aws_eip" "ip" {
