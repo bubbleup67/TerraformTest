@@ -6,4 +6,5 @@ provider "aws" {
 
 resource "aws_sns_topic" "JR" {
   name = "JR"
+  tags = var.my_tags
 }
