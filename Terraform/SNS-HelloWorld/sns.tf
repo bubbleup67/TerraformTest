@@ -1,7 +1,7 @@
 provider "aws" {
-  access_key = var.access_key
-  secret_key = var.secret_key
-  region     = var.region
+  region = "us-east-2"
+  shared_credentials_file = "/Users/johnray/.aws/credentials"
+  profile = "bubbleup"
 }
 
 resource "aws_sns_topic" "JR" {
